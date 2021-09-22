@@ -47,6 +47,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading-primary {
   color: #fff;
@@ -97,4 +98,37 @@ body {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.bn-white::after {
+  background-color: white;
+}
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.btn:link,
+bnt:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn-white {
+  background-color: white;
+  color: #777;
 }
